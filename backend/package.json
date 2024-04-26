@@ -1,0 +1,27 @@
+{
+	"name": "@portfolio/backend",
+	"description": "backend of my portfolio",
+	"version": "0.0.1",
+	"type": "module",
+	"author": "titsex",
+	"license": "MIT",
+	"scripts": {
+		"format": "biome format ./src",
+		"lint": "biome lint ./src",
+		"type:check": "tsc --project ./tsconfig.json",
+		"start": "pnpm type:check && tsx --env-file=./environments/.production.env ./src/main.ts",
+		"dev": "pnpm type:check && tsx watch --env-file=./environments/.development.env ./src/main.ts"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.7.1",
+		"@types/node": "^20.12.7",
+		"tsx": "^4.7.3",
+		"typescript": "^5.4.5"
+	},
+	"dependencies": {
+		"@nestjs/common": "^10.3.8",
+		"@nestjs/core": "^10.3.8",
+		"@nestjs/platform-fastify": "^10.3.8",
+		"reflect-metadata": "^0.2.2"
+	}
+}

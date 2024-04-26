@@ -1,0 +1,19 @@
+{
+	"name": "portfolio",
+	"description": "my portfolio",
+	"version": "0.0.1",
+	"type": "module",
+	"author": "titsex",
+	"license": "MIT",
+	"packageManager": "pnpm@9.0.2",
+	"engines": {
+		"node": ">=21"
+	},
+	"scripts": {
+		"format": "pnpm --parallel --stream -r format",
+		"lint": "pnpm --parallel --stream -r lint",
+		"dev": "pnpm --parallel --stream -r dev",
+		"start": "pnpm --parallel --stream -r start"
+	},
+	"workspaces": ["backend", "frontend"]
+}

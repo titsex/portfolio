@@ -1,0 +1,26 @@
+{
+	"name": "@portfolio/frontend",
+	"description": "frontend of my portfolio",
+	"version": "0.0.1",
+	"type": "module",
+	"author": "titsex",
+	"license": "MIT",
+	"scripts": {
+		"format": "biome format ./src",
+		"lint": "biome lint ./src",
+		"start": "tsc && vite build && vite preview --port 3000",
+		"dev": "vite --port 3000"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.7.1",
+		"@types/react": "^18.3.0",
+		"@types/react-dom": "^18.3.0",
+		"@vitejs/plugin-react": "^4.2.1",
+		"typescript": "^5.4.5",
+		"vite": "^5.2.10"
+	},
+	"dependencies": {
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	}
+}

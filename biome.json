@@ -8,7 +8,8 @@
 		"rules": {
 			"recommended": true,
 			"style": {
-				"noNonNullAssertion": "off"
+				"noNonNullAssertion": "off",
+				"useImportType": "off"
 			},
 			"suspicious": {
 				"noConfusingVoidType": "off"
@@ -28,6 +29,9 @@
 			"quoteProperties": "asNeeded",
 			"lineEnding": "lf",
 			"lineWidth": 120
+		},
+		"parser": {
+			"unsafeParameterDecoratorsEnabled": true
 		}
 	}
 }

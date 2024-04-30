@@ -7,8 +7,6 @@
 		"noUnusedLocals": true,
 		"noFallthroughCasesInSwitch": true,
 		"forceConsistentCasingInFileNames": true,
-		"experimentalDecorators": true,
-		"emitDecoratorMetadata": true,
 		"skipLibCheck": true
 	}
 }

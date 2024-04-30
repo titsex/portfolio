@@ -5,7 +5,7 @@
 	"type": "module",
 	"author": "titsex",
 	"license": "MIT",
-	"packageManager": "pnpm@9.0.2",
+	"packageManager": "pnpm@9.0.6",
 	"engines": {
 		"node": ">=21"
 	},

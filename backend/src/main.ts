@@ -1,5 +1,5 @@
 import { FastifyAdapter, type NestFastifyApplication } from '@nestjs/platform-fastify'
-import { ApplicationModule } from './application.module'
+import { ApplicationModule } from '@application/module'
 import { NestFactory } from '@nestjs/core'
 import { Logger } from '@nestjs/common'
 

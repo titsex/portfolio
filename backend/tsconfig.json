@@ -1,4 +1,14 @@
 {
 	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"paths": {
+			"@application/module": ["./src/application.module"],
+			"@auth/*": ["./src/auth/auth.*"],
+			"@mailer/*": ["./src/core/mailer/mailer.*"],
+			"@config/*": ["./src/core/config/config.*"]
+		}
+	},
 	"include": ["src"]
 }

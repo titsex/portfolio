@@ -1,5 +1,5 @@
+import { createMailerCredentialsProvider, createMailerTransportProvider } from '@mailer/provider'
 import { DynamicModule, Global, Module } from '@nestjs/common'
-import { createMailerProvider } from '@mailer/provider'
 import { MailerService } from '@mailer/service'
 import { MailerOptions } from '@mailer/types'
 
@@ -7,12 +7,13 @@ import { MailerOptions } from '@mailer/types'
 @Module({})
 export class MailerModule {
 	public static forRoot(options: MailerOptions): DynamicModule {
-		const mailerProvider = createMailerProvider(options)
+		const mailerCredentialsProvider = createMailerCredentialsProvider(options)
+		const mailerTransportProvider = createMailerTransportProvider()
 
 		return {
 			module: MailerModule,
-			providers: [MailerService, mailerProvider],
-			exports: [MailerService, mailerProvider],
+			providers: [MailerService, mailerCredentialsProvider, mailerTransportProvider],
+			exports: [MailerService, mailerCredentialsProvider, mailerTransportProvider],
 		}
 	}
 }

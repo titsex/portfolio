@@ -3,12 +3,9 @@
 	"compilerOptions": {
 		"experimentalDecorators": true,
 		"emitDecoratorMetadata": true,
+		"noEmit": true,
 		"paths": {
-			"@application/module": ["./src/application.module"],
-			"@auth/*": ["./src/auth/auth.*"],
-			"@mailer/*": ["./src/core/modules/mailer/mailer.*"],
-			"@config/*": ["./src/core/modules/config/config.*"],
-			"@validation/*": ["./src/core/validation/validation.*"]
+			"@application/module": ["./src/application.module"]
 		}
 	},
 	"include": ["src"]

@@ -28,7 +28,7 @@
 			"bracketSpacing": true,
 			"quoteProperties": "asNeeded",
 			"lineEnding": "lf",
-			"lineWidth": 120
+			"lineWidth": 90
 		},
 		"parser": {
 			"unsafeParameterDecoratorsEnabled": true

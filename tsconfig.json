@@ -2,9 +2,14 @@
 	"compilerOptions": {
 		"target": "ES2022",
 		"module": "ES2022",
+		"moduleDetection": "force",
 		"moduleResolution": "Node",
 		"strict": true,
 		"noUnusedLocals": true,
+		"resolveJsonModule": true,
+		"allowJs": true,
+		"esModuleInterop": true,
+		"isolatedModules": true,
 		"noFallthroughCasesInSwitch": true,
 		"forceConsistentCasingInFileNames": true,
 		"skipLibCheck": true

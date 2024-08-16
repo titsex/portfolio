@@ -1,4 +1,4 @@
 import { configurationSchema } from './configuration.schema'
-import { Static } from '@sinclair/typebox'
+import { Infer } from '@vinejs/vine/build/src/types'
 
-export type Configuration = Static<typeof configurationSchema>
+export type Configuration = Infer<typeof configurationSchema>

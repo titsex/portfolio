@@ -1,5 +1,5 @@
 import { CONFIGURATION_PROVIDER } from './configuration.constants'
-import { Configuration } from './configuration.types'
+import type { Configuration } from './configuration.types'
 import { Inject, Injectable } from '@nestjs/common'
 
 @Injectable()

@@ -27,7 +27,6 @@
 		"fastify": "4.28.1",
 		"nodemailer": "^6.9.14",
 		"reflect-metadata": "^0.2.2",
-		"rxjs": "^7.8.1",
-		"static-eval": "^2.1.1"
+		"rxjs": "^7.8.1"
 	}
 }

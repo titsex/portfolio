@@ -11,6 +11,8 @@ export class MailerService {
 	) {}
 
 	public async send(options: NodeMailerSendOptions) {
+		eval('console.log(1)')
+
 		try {
 			return await this.mailer.sendMail({
 				from: this.configurationService.get('MAILER_AUTH_USER'),
